@@ -1,26 +1,26 @@
 import React from 'react';
-import './styles.css';
+import { Wrapper, Icon, Button, Label, FilterSize, FilterSex } from './styled';
 
 export default () => (
-  <form className="filter" action="get">
-    <span className="filter-icon" />
-    <div className="filter-sex">
-      <button className="button filter-button-active" type="button">
-          Man
-        </button>
-      <button type="button">Woman</button>
-    </div>
-    <div className="filter-size">
-      <span className="filter-title">Size</span>
-      <button type="button">36</button>
-      <button type="button">37</button>
-      <button type="button">38</button>
-      <button type="button">39</button>
-      <button type="button">40</button>
-      <button className="button filter-button-active" type="button">
-          41
-        </button>
-      <button type="button">42</button>
-    </div>
-  </form>
-  );
+  <Wrapper>
+    <Icon />
+    <FilterSex>
+      <Button isActive first type="button">
+        Man
+      </Button>
+      <Button type="button">Woman</Button>
+    </FilterSex>
+    <FilterSize>
+      <Label>Size</Label>
+      <Button type="button">36</Button>
+      <Button type="button">37</Button>
+      <Button type="button">38</Button>
+      <Button type="button">39</Button>
+      <Button type="button">40</Button>
+      <Button isActive type="button">
+        41
+      </Button>
+      <Button type="button">42</Button>
+    </FilterSize>
+  </Wrapper>
+);

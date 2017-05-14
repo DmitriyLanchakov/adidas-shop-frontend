@@ -1,8 +1,9 @@
 import React from 'react';
-import './styles.css';
+import { Form, Input, Icon } from './styled';
 
 export default () => (
-  <form className="search" action="#" method="get">
-    <input type="search" name="search" className="search-input" />
-  </form>
-  );
+  <Form action="#" method="get">
+    <Icon src={require('./../../assets/img/icon-search.svg')} alt="" />
+    <Input type="text" name="search" id="search" />
+  </Form>
+);

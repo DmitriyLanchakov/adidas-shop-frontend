@@ -1,16 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './styles.css';
+import { MainNav, SubNav, MainNavItem, SubNavItem } from './styled';
 
 export default () => (
-  <nav className="navigation">
-    <Link to="/" className="navigation-item item-active">Sports</Link>
-    <nav className="subnavigation">
-      <Link to="/" className="subitem-active">Shoes</Link>
-      <Link to="/">Clothing</Link>
-      <Link to="/">Accesories</Link>
-    </nav>
-    <Link to="/" className="navigation-item">Brands</Link>
-    <Link to="/" className="navigation-item">Micoach</Link>
-  </nav>
+  <MainNav>
+    <MainNavItem to="/" isActive>Sports</MainNavItem>
+    <SubNav>
+      <SubNavItem to="/" isActive>Shoes</SubNavItem>
+      <SubNavItem to="/">Clothing</SubNavItem>
+      <SubNavItem to="/">Accessories</SubNavItem>
+    </SubNav>
+    <MainNavItem to="/">Brands</MainNavItem>
+    <MainNavItem to="/">Micoah</MainNavItem>
+  </MainNav>
 );

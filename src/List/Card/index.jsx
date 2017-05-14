@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './styles.css';
+import { Wrapper, MainLink, Image, Label } from './styled';
 
-export default () => (
-  <div className="catalog-item">
-    <img className="catalog-item-img" src={require('./shoes-1.jpg')} alt="shoe" />
-    <Link className="catalog-item-link on-sale" to="/item">170$</Link>
-    <span className="sale-flag">Sale</span>
-  </div>
+export default ({ sale, img, price }) => (
+  <Wrapper>
+    <Image src={img} alt="shoe" />
+    <MainLink sale={sale} to="/item">{price}</MainLink>
+    {sale && <Label>Sale</Label>}
+  </Wrapper>
 );

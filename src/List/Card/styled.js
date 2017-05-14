@@ -1,4 +1,7 @@
-.catalog-item {
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+export const Wrapper = styled.div`
   background: #f4f4f4;
   padding-top: 6px;
   padding-right: 8.5px;
@@ -8,16 +11,16 @@
   margin-right: 15px;
   text-align: center;
   position: relative;
-}
+`;
 
-.catalog-item-img {
+export const Image = styled.img`
   width: 100%;
-}
+`;
 
-.catalog-item-link {
+export const MainLink = styled(Link)`
   display: block;
   font-size: 30px;
-  color: black;
+  color: ${p => (p.sale ? 'white' : 'black')};
   background: white;
   text-decoration: none;
   padding-top: 23px;
@@ -25,20 +28,14 @@
   padding-bottom: 27px;
   padding-left: 0;
   margin-top: 8px;
-}
+  background-image: ${p => (p.sale ? 'linear-gradient(107deg, #0c09bf, #966dd8)' : 'none')};
+  &:hover {
+    background-image: linear-gradient(107deg, #0c09bf, #966dd8);
+    color: white;
+  }
+`;
 
-.catalog-item-link:hover,
-.catalog-item-link.on-sale {
-  background-image: linear-gradient(107deg, #0c09bf, #966dd8);
-  color: white;
-}
-
-.catalog-item-link.on-sale:hover {
-  background-image: linear-gradient(107deg, #966dd8, #0c09bf);
-  color: white;
-}
-
-.catalog-item .sale-flag {
+export const Label = styled.span`
   font-family: 'AvenirNextReg';
   font-weight: bold;
   display: block;
@@ -53,4 +50,4 @@
   text-transform: uppercase;
   font-size: 14px;
   color: white;
-}
+`;
