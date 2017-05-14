@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'AndaleMono';
+  src: url(fonts/Andale-Mono.woff);
+}
+
+@font-face {
+  font-family: 'AvenirNextBold';
+  src: url(fonts/avenir-next-bold.woff);
+}
+
+@font-face {
+  font-family: 'AvenirNextReg';
+  src: url(fonts/avenir-next-regular.woff);
+}

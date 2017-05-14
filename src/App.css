@@ -1,24 +1,15 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  font-family: 'AvenirNextBold';
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.main-area {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
 }

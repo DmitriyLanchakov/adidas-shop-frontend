@@ -1,0 +1,242 @@
+.product {
+  min-height: 100%;
+  position: relative;
+}
+
+.product-container {
+  padding-top: 15px;
+  padding-right: 32px;
+  padding-bottom: 145px;
+  padding-left: 32px;
+}
+
+.product-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  max-height: 40px;
+}
+
+.product-header h1 {
+  max-width: 80px;
+  font-size: 64px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.label-save {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 75px;
+  height: 75px;
+  color: white;
+  background: #e3e3e3;
+  border-radius: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+}
+
+.product-header-options {
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+.product-header-color-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product-header-options .sale-flag {
+  font-family: 'AvenirNextReg';
+  font-weight: bold;
+  display: block;
+  margin-left: 30px;
+  padding-top: 7px;
+  padding-right: 20px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  background: #ff5c5c;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+}
+
+.color-panel-button {
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  cursor: pointer;
+  background: none;
+  margin-left: 12px;
+}
+
+button.color-panel-button:focus {
+  outline: 0;
+}
+
+.background-gray {
+  background: #c5c5c5;
+}
+
+.background-blue {
+  background: #4d87ca;
+}
+
+.background-brown {
+  background: #4a4a4a;
+}
+
+.background-light-gray {
+  background: #e0e0e0;
+}
+
+.product-header-price {
+  font-size: 80px;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  color: #e2e2e2;
+}
+
+.gallery-items-big img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-gallery-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-gallery-items img {
+  width: 15%;
+  height: 25%;
+  outline-color: white;
+  cursor: pointer;
+  margin-top: 0;
+  margin-right: 14px;
+  margin-bottom: 0;
+  margin-left: 14px;
+}
+
+.product-gallery-items img:hover,
+img.gallery-items-active {
+  outline: 5px solid #e8e8ea;
+}
+
+.items-more-label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  height: 120px;
+  cursor: pointer;
+  padding-bottom: 20px;
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.items-more-label span {
+  width: 100%;
+  background: #e7e7e7;
+  height: 3px;
+  border-radius: 1.5px;
+  position: relative;
+}
+
+.items-more-label span:before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #e7e7e7;
+  height: 3px;
+  top: -6px;
+  border-radius: 1.5px;
+}
+
+.items-more-label span:after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #e7e7e7;
+  height: 3px;
+  top: 3px;
+  border-radius: 1.5px;
+}
+
+.items-more-button {
+  border: none;
+  padding-bottom: 30px;
+  background: none;
+  flex-basis: 40px;
+  font-family: 'AvenirNextReg';
+  color: #c0c0c0;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  width: 64px;
+}
+
+button.items-more-button:focus {
+  outline: 0;
+  border: none;
+}
+
+.product-about {
+  margin-top: 30px;
+  padding: 0;
+  font-family: 'AvenirNextReg';
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 1.52;
+  color: #d8d8d8;
+}
+
+.product-about b {
+  color: #6e6e6e;
+  font-family: 'AvenirNextReg';
+}
+
+.product-buy-button {
+  height: 115px;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  padding-top: 36px;
+  padding-right: 390px;
+  padding-bottom: 36px;
+  padding-left: 0;
+  text-align: center;
+  background-image: linear-gradient(to right, #4949aa, #27275d);
+}
+
+.product-buy-button:hover {
+  background-image: linear-gradient(to right, #27275d, #4949aa);
+}
