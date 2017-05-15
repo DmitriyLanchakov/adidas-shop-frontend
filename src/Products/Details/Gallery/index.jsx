@@ -28,13 +28,13 @@ const LabelWrapper = styled.div`
 export default () => (
   <div>
     <div>
-      <BigImage src={require('./../../assets/img/shoes-3-big.jpg')} alt="shoe" />
+      <BigImage src={require('./../../../assets/img/shoes-3-big.jpg')} alt="shoe" />
     </div>
     <Container>
-      <Item src={require('./../../assets/img/shoes-3-small1.jpg')} alt="shoe" />
-      <Item src={require('./../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
-      <Item src={require('./../../assets/img/shoes-3-small3.jpg')} alt="shoe" />
-      <Item src={require('./../../assets/img/shoes-3-small4.jpg')} isActive alt="shoe" />
+      <Item src={require('./../../../assets/img/shoes-3-small1.jpg')} alt="shoe" />
+      <Item src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
+      <Item src={require('./../../../assets/img/shoes-3-small3.jpg')} alt="shoe" />
+      <Item src={require('./../../../assets/img/shoes-3-small4.jpg')} isActive alt="shoe" />
       <LabelWrapper>
         <MoreLabel />
       </LabelWrapper>

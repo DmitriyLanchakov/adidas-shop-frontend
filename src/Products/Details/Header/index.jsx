@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Left from './Left';
 import Right from './Right';
 
-const Header = styled.header`
+const Wrapper = styled.header`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -14,8 +14,8 @@ const Header = styled.header`
 `;
 
 export default () => (
-  <Header>
+  <Wrapper>
     <Left />
     <Right />
-  </Header>
+  </Wrapper>
 );

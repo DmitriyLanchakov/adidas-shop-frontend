@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProductHeader from './ProductHeader';
+import Header from './Header';
 import Gallery from './Gallery';
 import Description from './Description';
 import BuyNowButton from './BuyNowButton';
@@ -20,7 +20,7 @@ const Product = styled.div`
 export default () => (
   <Wrapper>
     <Product>
-      <ProductHeader />
+      <Header />
       <Gallery />
       <Description />
     </Product>

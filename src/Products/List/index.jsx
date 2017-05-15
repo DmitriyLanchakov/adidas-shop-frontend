@@ -23,22 +23,22 @@ export default () => (
       <Wrapper>
         <Row>
           <CardCol>
-            <Card sale img={require('./../assets/img/shoes-1.jpg')} price="270" />
+            <Card sale img={require('./../../assets/img/shoes-1.jpg')} price="270$" />
           </CardCol>
           <CardCol>
-            <Card img={require('./../assets/img/shoes-2.jpg')} price="220" />
+            <Card img={require('./../../assets/img/shoes-2.jpg')} price="220$" />
           </CardCol>
           <CardCol>
-            <Card img={require('./../assets/img/shoes-3.jpg')} price="290" />
+            <Card img={require('./../../assets/img/shoes-3.jpg')} price="290$" />
           </CardCol>
           <CardCol>
-            <Card img={require('./../assets/img/shoes-1.jpg')} price="270" />
+            <Card img={require('./../../assets/img/shoes-1.jpg')} price="270$" />
           </CardCol>
           <CardCol>
-            <Card sale img={require('./../assets/img/shoes-2.jpg')} price="220" />
+            <Card sale img={require('./../../assets/img/shoes-2.jpg')} price="220$" />
           </CardCol>
           <CardCol>
-            <Card sale img={require('./../assets/img/shoes-3.jpg')} price="290" />
+            <Card sale img={require('./../../assets/img/shoes-3.jpg')} price="290$" />
           </CardCol>
         </Row>
       </Wrapper>

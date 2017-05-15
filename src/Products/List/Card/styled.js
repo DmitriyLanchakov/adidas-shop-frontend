@@ -35,19 +35,8 @@ export const MainLink = styled(Link)`
   }
 `;
 
-export const Label = styled.span`
-  font-family: 'AvenirNextReg';
-  font-weight: bold;
-  display: block;
+export const LabelWrapper = styled.span`
   position: absolute;
   top: 13px;
   right: 16px;
-  padding-top: 7px;
-  padding-right: 20px;
-  padding-bottom: 7px;
-  padding-left: 20px;
-  background: #ff5c5c;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: white;
 `;

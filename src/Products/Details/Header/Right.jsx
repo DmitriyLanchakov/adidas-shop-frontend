@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Label from './../../../components/Label';
 
 const Wrapper = styled.div`
   align-items: flex-end;
@@ -27,21 +28,6 @@ const Button = styled.button`
   }
 `;
 
-const Label = styled.span`
-  font-family: 'AvenirNextReg';
-  font-weight: bold;
-  display: block;
-  margin-left: 30px;
-  padding-top: 7px;
-  padding-right: 20px;
-  padding-bottom: 7px;
-  padding-left: 20px;
-  background: #ff5c5c;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: white;
-`;
-
 const Price = styled.div`
   font-size: 80px;
   padding-top: 10px;
@@ -62,7 +48,7 @@ export default () => (
       <Button color="#4d87ca" />
       <Button color="#4a4a4a" />
       <Button color="#e0e0e0" />
-      <Label>Sale</Label>
+      <Label />
     </Container>
     <Price>170$</Price>
   </Wrapper>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import image from './../../assets/img/icon-filter.png';
+import image from './../../../assets/img/icon-filter.png';
 
 export const Wrapper = styled.div`
   display: flex;
