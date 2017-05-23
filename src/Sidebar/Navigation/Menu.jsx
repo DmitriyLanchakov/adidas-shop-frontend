@@ -1,26 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Heading = styled.div`
+const Wrapper = styled.div`
+  margin-right: 0;
+  margin-left: 0;
+`;
 
-  display: block;
+const Button = styled.button`
   padding-top: 25px;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-
-  color: ${p => (p.isActive ? '#fff' : '#3c3c3c')};
-
-  &:hover {
-    color: #fff;
-  }
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  outline: none;
+  color: #fff;
 
   &:after {
     content: "";
     display: inline-block;
     width: 6px;
     height: 6px;
-    border: 3px solid ${p => (p.isActive ? '#fff' : '#3c3c3c')};
+    border: 3px solid #fff;
     border-left: none;
     border-top: none;
     border-radius: 3px;
@@ -43,12 +46,12 @@ export default class Menu extends React.Component {
 
   render() {
     return (
-      <div>
-        <Heading onClick={this.handleClick} isActive={this.state.isActive}>
+      <Wrapper>
+        <Button onClick={this.handleClick} isActive={this.state.isActive}>
           {this.props.title}
-        </Heading>
+        </Button>
         {this.state.isActive && this.props.children}
-      </div>
+      </Wrapper>
     );
   }
 }
