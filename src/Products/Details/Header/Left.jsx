@@ -18,7 +18,7 @@ const Save = styled.button`
   width: 75px;
   height: 75px;
   color: white;
-  background: #e3e3e3;
+  background: ${p => (p.color ? `${p.color};` : '#e3e3e3;')};
   border-radius: 100%;
   text-transform: uppercase;
   cursor: pointer;
@@ -32,9 +32,9 @@ const Save = styled.button`
   }
 `;
 
-export default () => (
+export default ({ color }) => (
   <div>
     <Title>Ultra boost</Title>
-    <Save>Save</Save>
+    <Save color={color}>Save</Save>
   </div>
 );

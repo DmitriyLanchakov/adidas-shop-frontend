@@ -13,9 +13,23 @@ const Wrapper = styled.header`
   max-height: 40px;
 `;
 
-export default () => (
-  <Wrapper>
-    <Left />
-    <Right />
-  </Wrapper>
-);
+export default class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { color: '' };
+    this.handlePickColor = this.handlePickColor.bind(this);
+  }
+
+  handlePickColor(color) {
+    this.setState({ color });
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        <Left color={this.state.color} />
+        <Right pickColor={this.handlePickColor} color={this.state.color} />
+      </Wrapper>
+    );
+  }
+}

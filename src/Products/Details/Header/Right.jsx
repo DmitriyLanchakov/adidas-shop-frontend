@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Label from './../../../components/Label';
+import ColorButtons from './ColorButtons';
 
 const Wrapper = styled.div`
   align-items: flex-end;
@@ -14,20 +15,6 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Button = styled.button`
-  border: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 100%;
-  cursor: pointer;
-  background: none;
-  margin-left: 12px;
-  background-color: ${p => (p.color ? `${p.color};` : 'black;')};
-  &:focus {
-    outline: 0;
-  }
-`;
-
 const Price = styled.div`
   font-size: 80px;
   padding-top: 10px;
@@ -38,18 +25,15 @@ const Price = styled.div`
   margin-right: 0;
   margin-bottom: 20px;
   margin-left: 0;
-  color: #e2e2e2;
+  color: ${p => (p.color ? `${p.color};` : '#e2e2e2')};
 `;
 
-export default () => (
+export default ({ color, pickColor }) => (
   <Wrapper>
     <Container>
-      <Button color="#c5c5c5" />
-      <Button color="#4d87ca" />
-      <Button color="#4a4a4a" />
-      <Button color="#e0e0e0" />
+      <ColorButtons pickColor={pickColor} />
       <Label />
     </Container>
-    <Price>170$</Price>
+    <Price color={color}>170$</Price>
   </Wrapper>
 );
