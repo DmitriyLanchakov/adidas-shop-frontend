@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Item, MoreButton, MoreLabel } from './styled';
+import { Item } from './styled';
 
 const BigImage = styled.img`
   display: block;
@@ -11,18 +11,9 @@ const BigImage = styled.img`
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-`;
-
-const LabelWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  height: 120px;
-  cursor: pointer;
-  padding-bottom: 20px;
-  margin-right: 14px;
-  margin-left: 14px;
+  align-items: center;
+  align-content: center;
+  margin-left: 30px;
 `;
 
 export default () => (
@@ -35,10 +26,7 @@ export default () => (
       <Item src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
       <Item src={require('./../../../assets/img/shoes-3-small3.jpg')} alt="shoe" />
       <Item src={require('./../../../assets/img/shoes-3-small4.jpg')} isActive alt="shoe" />
-      <LabelWrapper>
-        <MoreLabel />
-      </LabelWrapper>
-      <MoreButton>see more photos</MoreButton>
+      <Item src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
     </Container>
   </div>
 );
