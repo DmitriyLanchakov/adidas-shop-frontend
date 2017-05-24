@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Item = styled.img`
+export const Image = styled.img`
   width: 15%;
   height: 25%;
   outline-color: white;
