@@ -9,17 +9,17 @@ const Button = styled.button`
   cursor: pointer;
   background: none;
   margin-left: 12px;
-  background-color: ${p => (p.color ? `${p.color};` : 'black;')};
+  background-color: ${p => `${p.color};`};
   &:focus {
     outline: 0;
   }
 `;
 
-export default ({ pickColor }) => (
+export default ({ onPickColor }) => (
   <div>
-    <Button onClick={() => pickColor('#c5c5c5')} color={'#c5c5c5'} />
-    <Button onClick={() => pickColor('#4d87ca')} color={'#4d87ca'} />
-    <Button onClick={() => pickColor('#4a4a4a')} color={'#4a4a4a'} />
-    <Button onClick={() => pickColor('#e0e0e0')} color={'#e0e0e0'} />
+    <Button onClick={() => onPickColor('#c5c5c5')} color={'#c5c5c5'} />
+    <Button onClick={() => onPickColor('#4d87ca')} color={'#4d87ca'} />
+    <Button onClick={() => onPickColor('#4a4a4a')} color={'#4a4a4a'} />
+    <Button onClick={() => onPickColor('#e0e0e0')} color={'#e0e0e0'} />
   </div>
 );

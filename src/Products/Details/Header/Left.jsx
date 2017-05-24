@@ -18,7 +18,7 @@ const Save = styled.button`
   width: 75px;
   height: 75px;
   color: white;
-  background: ${p => (p.color ? `${p.color};` : '#e3e3e3;')};
+  background: ${p => `${p.color};`};
   border-radius: 100%;
   text-transform: uppercase;
   cursor: pointer;

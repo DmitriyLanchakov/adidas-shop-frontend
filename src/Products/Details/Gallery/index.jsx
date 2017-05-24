@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Item } from './styled';
+import { Image } from './styled';
 
 const BigImage = styled.img`
   display: block;
@@ -22,11 +22,11 @@ export default () => (
       <BigImage src={require('./../../../assets/img/shoes-3-big.jpg')} alt="shoe" />
     </div>
     <Container>
-      <Item src={require('./../../../assets/img/shoes-3-small1.jpg')} alt="shoe" />
-      <Item src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
-      <Item src={require('./../../../assets/img/shoes-3-small3.jpg')} alt="shoe" />
-      <Item src={require('./../../../assets/img/shoes-3-small4.jpg')} isActive alt="shoe" />
-      <Item src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
+      <Image src={require('./../../../assets/img/shoes-3-small1.jpg')} alt="shoe" />
+      <Image src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
+      <Image src={require('./../../../assets/img/shoes-3-small3.jpg')} alt="shoe" />
+      <Image src={require('./../../../assets/img/shoes-3-small4.jpg')} isActive alt="shoe" />
+      <Image src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
     </Container>
   </div>
 );

@@ -25,13 +25,13 @@ const Price = styled.div`
   margin-right: 0;
   margin-bottom: 20px;
   margin-left: 0;
-  color: ${p => (p.color ? `${p.color};` : '#e2e2e2')};
+  color: ${p => `${p.color};`};
 `;
 
-export default ({ color, pickColor }) => (
+export default ({ color, onPickColor }) => (
   <Wrapper>
     <Container>
-      <ColorButtons pickColor={pickColor} />
+      <ColorButtons onPickColor={onPickColor} />
       <Label />
     </Container>
     <Price color={color}>170$</Price>
