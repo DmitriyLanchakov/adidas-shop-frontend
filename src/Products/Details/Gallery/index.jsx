@@ -26,7 +26,7 @@ const images = [
 export default class Gallery extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 3 };
+    this.state = { activeIndex: 0 };
     this.handleChangeImage = this.handleChangeImage.bind(this);
   }
 
@@ -47,8 +47,6 @@ export default class Gallery extends React.Component {
               index={index}
               isActive={this.state.activeIndex === index}
               handleChangeImage={this.handleChangeImage}
-              activeIndex={this.state.activeIndex}
-              alt="shoe"
             />
           ))}
         </Container>
