@@ -16,6 +16,9 @@ export const Icon = styled.span`
   width: 55px;
   height: 55px;
   margin-right: 30px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Label = styled.span`

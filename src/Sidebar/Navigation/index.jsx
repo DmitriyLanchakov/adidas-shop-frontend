@@ -4,9 +4,14 @@ import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
 
 const Nav = styled.nav`
-  padding-top: 125px;
+  margin-top: 125px;
   font-size: 24px;
   text-align: center;
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 `;
 
 const Link = styled(NavLink)`
@@ -18,7 +23,9 @@ const Link = styled(NavLink)`
   padding-top: 11px;
   padding-bottom: 11px;
   padding-right: 15px;
-
+  &.active {
+    color: #fff
+  }
   &:hover {
     color: #fff;
   }
