@@ -16,29 +16,60 @@ const Wrapper = styled.div`
   margin-right: -20px;
 `;
 
-export default () => (
+function generateRandomId() {
+  return Date.now().toString().slice(7);
+}
+
+export default ({ match }) => (
   <div>
     <Filter />
     <Grid fluid>
       <Wrapper>
         <Row>
           <CardCol>
-            <Card sale img={require('./../../assets/img/shoes-1.jpg')} price="270$" />
+            <Card
+              sale
+              img={require('./../../assets/img/shoes-1.jpg')}
+              price="270$"
+              to={`${match.url}/${generateRandomId()}`}
+            />
           </CardCol>
           <CardCol>
-            <Card img={require('./../../assets/img/shoes-2.jpg')} price="220$" />
+            <Card
+              img={require('./../../assets/img/shoes-2.jpg')}
+              price="220$"
+              to={`${match.url}/${generateRandomId()}`}
+            />
           </CardCol>
           <CardCol>
-            <Card img={require('./../../assets/img/shoes-3.jpg')} price="290$" />
+            <Card
+              img={require('./../../assets/img/shoes-3.jpg')}
+              price="290$"
+              to={`${match.url}/${generateRandomId()}`}
+            />
           </CardCol>
           <CardCol>
-            <Card img={require('./../../assets/img/shoes-1.jpg')} price="270$" />
+            <Card
+              img={require('./../../assets/img/shoes-1.jpg')}
+              price="270$"
+              to={`${match.url}/${generateRandomId()}`}
+            />
           </CardCol>
           <CardCol>
-            <Card sale img={require('./../../assets/img/shoes-2.jpg')} price="220$" />
+            <Card
+              sale
+              img={require('./../../assets/img/shoes-2.jpg')}
+              price="220$"
+              to={`${match.url}/${generateRandomId()}`}
+            />
           </CardCol>
           <CardCol>
-            <Card sale img={require('./../../assets/img/shoes-3.jpg')} price="290$" />
+            <Card
+              sale
+              img={require('./../../assets/img/shoes-3.jpg')}
+              price="290$"
+              to={`${match.url}/${generateRandomId()}`}
+            />
           </CardCol>
         </Row>
       </Wrapper>

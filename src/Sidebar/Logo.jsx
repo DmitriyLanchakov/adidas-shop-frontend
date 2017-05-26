@@ -27,7 +27,7 @@ const LogoImg = styled.img`
 `;
 
 export default () => (
-  <StyledLink to="/">
+  <StyledLink to="/products/football/shoes">
     <LogoImg src={require('./../assets/img/logo.png')} alt="logo" />
   </StyledLink>
 );
