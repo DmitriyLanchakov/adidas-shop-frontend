@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from './styled';
+import Image from './Image';
 
 const BigImage = styled.img`
   display: block;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 `;
 
@@ -13,20 +13,44 @@ const Container = styled.div`
   flex-direction: row;
   align-items: center;
   align-content: center;
-  margin-left: 30px;
+  margin-left: 80px;
 `;
 
-export default () => (
-  <div>
-    <div>
-      <BigImage src={require('./../../../assets/img/shoes-3-big.jpg')} alt="shoe" />
-    </div>
-    <Container>
-      <Image src={require('./../../../assets/img/shoes-3-small1.jpg')} alt="shoe" />
-      <Image src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
-      <Image src={require('./../../../assets/img/shoes-3-small3.jpg')} alt="shoe" />
-      <Image src={require('./../../../assets/img/shoes-3-small4.jpg')} isActive alt="shoe" />
-      <Image src={require('./../../../assets/img/shoes-3-small2.jpg')} alt="shoe" />
-    </Container>
-  </div>
-);
+const images = [
+  require('./../../../assets/img/1bitmap.jpg'),
+  require('./../../../assets/img/2bitmap.jpg'),
+  require('./../../../assets/img/3bitmap.jpg'),
+  require('./../../../assets/img/4bitmap.jpg'),
+];
+
+export default class Gallery extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { activeIndex: 0 };
+    this.handleChangeImage = this.handleChangeImage.bind(this);
+  }
+
+  handleChangeImage(activeIndex) {
+    this.setState({ activeIndex });
+  }
+
+  render() {
+    return (
+      <div>
+        <div>
+          <BigImage src={images[this.state.activeIndex]} alt="shoe" />
+        </div>
+        <Container>
+          {images.map((image, index) => (
+            <Image
+              img={image}
+              index={index}
+              isActive={this.state.activeIndex === index}
+              handleChangeImage={this.handleChangeImage}
+            />
+          ))}
+        </Container>
+      </div>
+    );
+  }
+}
