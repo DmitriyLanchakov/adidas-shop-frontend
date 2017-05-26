@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
 
 const Nav = styled.nav`
-  margin-top: 125px;
-  font-size: 24px;
   text-align: center;
-  @media (max-width: 768px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    margin-top: 125px;
     text-align: center;
   }
 `;

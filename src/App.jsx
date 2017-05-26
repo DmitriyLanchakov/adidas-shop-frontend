@@ -7,11 +7,11 @@ import Details from './Products/Details';
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  min-height: 100vh;
+  flex-direction: column;
   width: 100%;
-  @media (max-width: 768px) {
-    flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    min-height: 100vh;
   }
 `;
 
