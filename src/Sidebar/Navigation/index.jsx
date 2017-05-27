@@ -4,9 +4,14 @@ import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
 
 const Nav = styled.nav`
-  padding-top: 125px;
-  font-size: 24px;
   text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    margin-top: 125px;
+    text-align: center;
+  }
 `;
 
 const Link = styled(NavLink)`
@@ -18,7 +23,9 @@ const Link = styled(NavLink)`
   padding-top: 11px;
   padding-bottom: 11px;
   padding-right: 15px;
-
+  &.active {
+    color: #fff
+  }
   &:hover {
     color: #fff;
   }
@@ -30,29 +37,29 @@ const Link = styled(NavLink)`
 export default () => (
   <Nav>
     <Menu title="Football">
-      <Link to="/football/shoes">Shoes</Link>
-      <Link to="/football/clothing">
+      <Link to="/products/football/shoes">Shoes</Link>
+      <Link to="/products/football/clothing">
         Clothing
       </Link>
-      <Link to="/football/accesories">
+      <Link to="/products/football/accesories">
         Accesories
       </Link>
     </Menu>
     <Menu title="Running">
-      <Link to="/running/shoes">Shoes</Link>
-      <Link to="/running/clothing">
+      <Link to="/products/running/shoes">Shoes</Link>
+      <Link to="/products/running/clothing">
         Clothing
       </Link>
-      <Link to="/running/accesories">
+      <Link to="/products/running/accesories">
         Accesories
       </Link>
     </Menu>
     <Menu title="Basketball">
-      <Link to="/basketball/shoes">Shoes</Link>
-      <Link to="/basketball/clothing">
+      <Link to="/products/basketball/shoes">Shoes</Link>
+      <Link to="/products/basketball/clothing">
         Clothing
       </Link>
-      <Link to="/basketball/accesories">
+      <Link to="/products/basketball/accesories">
         Accesories
       </Link>
     </Menu>

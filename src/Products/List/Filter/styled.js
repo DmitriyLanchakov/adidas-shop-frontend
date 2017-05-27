@@ -11,11 +11,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Icon = styled.span`
-  display: block;
-  background: #ebebeb url(${image}) no-repeat 50% 50%;
-  width: 55px;
-  height: 55px;
-  margin-right: 30px;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    background: #ebebeb url(${image}) no-repeat 50% 50%;
+    width: 55px;
+    height: 55px;
+    margin-right: 30px;
+  }
 `;
 
 export const Label = styled.span`
